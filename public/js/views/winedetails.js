@@ -52,7 +52,7 @@ window.WineView = Backbone.View.extend({
         this.model.save(null, {
             success: function (model) {
                 self.render();
-                app.navigate('wines/' + model.id, false);
+                app.navigate('vinhos/' + model._id, false);
                 utils.showAlert('OK!', 'VINHO ADICIONADO AO BANCO', 'alert-success');
             },
             error: function () {

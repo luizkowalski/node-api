@@ -2,7 +2,7 @@ window.Wine = Backbone.Model.extend({
 
     urlRoot: "/wines/",
 
-    idAttribute: "id",
+    idAttribute: "_id",
 
     initialize: function () {
         this.validators = {};
